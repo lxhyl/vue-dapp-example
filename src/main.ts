@@ -9,7 +9,7 @@ document.head.appendChild(meta)
 
 import "./index.css"
 createApp(App)
-    .use(urql, { url: GRAPH_URL })
-    .use(createPinia())
-    .mount('#app')
+.use(urql, { url: GRAPH_URL })
+.use(createPinia())
+.mount('#app')
 
