@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+description: vue-dapp-example
+repository: https://github.com/lxhyl/dapp
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: vue-dapp-example
+    network: mumbai
+    source:
+      address: "0x4d5C05D79D756F1b0D42b629fb773077b2C5bF2A"
+      startBlock: 25000000
+      abi: Gravatar
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Gravatar
+      abis:
+        - name: Gravatar
+          file: vue-dapp-example/abis/abi.json
+      eventHandlers:
+        - event: SentNote(address,string)
+          handler: handleSendNote
+      file: vue-dapp-example/vue-dapp-example.wasm

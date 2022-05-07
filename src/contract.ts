@@ -1,0 +1,3 @@
+export const ABI = [{ "anonymous": false, "inputs": [{ "indexed": false, "internalType": "address", "name": "sender", "type": "address" }, { "indexed": false, "internalType": "string", "name": "note", "type": "string" }], "name": "SentNote", "type": "event" }, { "inputs": [{ "internalType": "string", "name": "_note", "type": "string" }], "name": "addNote", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "note", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }]
+export const ADDRESS = "0x4d5C05D79D756F1b0D42b629fb773077b2C5bF2A"
+export const GRAPH_URL = 'https://api.thegraph.com/subgraphs/name/lxhyl/note'

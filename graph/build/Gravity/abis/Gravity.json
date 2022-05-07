@@ -1,0 +1,19 @@
+[
+  {
+    "type": "event",
+    "name": "SentNote",
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "note",
+        "type": "string"
+      }
+    ]
+  }
+]

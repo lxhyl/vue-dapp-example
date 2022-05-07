@@ -1,0 +1,1 @@
+export const NRTWORKS = new Map([[80001, 'Mumbai'], [137, 'Polygon'], [1, 'Main']])

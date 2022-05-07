@@ -1,0 +1,6 @@
+type SentNote @entity{
+  id:ID!
+  sender:Bytes!
+  note:String!
+  timestamp:BigInt!
+}
